@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b919944-d6c8-471f-a5a0-04749a3aff1d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="6b919944-d6c8-471f-a5a0-04749a3aff1d" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/src/ChatListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MultiUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWithMultiuser/src/ChatWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWithMultiuser/src/ChatWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWithMultiuser/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWithMultiuser/src/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWithMultiuser/src/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWithMultiuser/src/Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/PauliLinde/TCPChat.git",
-    "accountId": "f4bdc51c-1aca-4e12-858d-7afb97d0ea23"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PauliLinde&quot;
   }
-}]]></component>
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PauliLinde/TCPChat.git&quot;,
+    &quot;accountId&quot;: &quot;f4bdc51c-1aca-4e12-858d-7afb97d0ea23&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -43,7 +50,9 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.ChatListener.executor&quot;: &quot;Run&quot;,
     &quot;Application.ChatWindow.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Client.executor&quot;: &quot;Run&quot;,
     &quot;Application.Receiver.executor&quot;: &quot;Run&quot;,
     &quot;Application.Sender.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -58,10 +67,24 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Sender">
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="ChatListener" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ChatListener" />
+      <module name="TCPChat" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ChatWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChatWindow" />
       <module name="ChatWithMultiuser" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client" />
+      <module name="TCPChat" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -81,12 +104,16 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.ChatListener" />
+      <item itemvalue="Application.Client" />
       <item itemvalue="Application.ChatWindow" />
       <item itemvalue="Application.Sender" />
       <item itemvalue="Application.Receiver" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.ChatListener" />
         <item itemvalue="Application.Sender" />
         <item itemvalue="Application.Receiver" />
         <item itemvalue="Application.ChatWindow" />
@@ -110,8 +137,18 @@
       <option name="presentableId" value="Default" />
       <updated>1731415950855</updated>
       <workItem from="1731416227277" duration="13615000" />
-      <workItem from="1731434315944" duration="2227000" />
+      <workItem from="1731434315944" duration="2552000" />
+      <workItem from="1731484858531" duration="10878000" />
+      <workItem from="1731574651659" duration="6200000" />
     </task>
+    <task id="LOCAL−00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1731439055979</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1731439055979</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,5 +164,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>
